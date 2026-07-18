@@ -1,0 +1,7 @@
+utng\gtid232\adla\App.class
+utng\gtid232\adla\conexion\ConexionBD.class
+utng\gtid232\adla\dao\PrestamoDAO.class
+utng\gtid232\adla\controlador\PrestamosController.class
+utng\gtid232\adla\modelo\Prestamo.class
+utng\gtid232\adla\SecondaryController.class
+utng\gtid232\adla\PrimaryController.class

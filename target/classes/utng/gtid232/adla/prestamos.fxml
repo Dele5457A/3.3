@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="749.0" prefWidth="1228.0" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1" fx:controller="utng.gtid232.adla.controlador.PrestamosController">
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="749.0" prefWidth="340.0" styleClass="primary-color" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="150.0" prefWidth="298.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@IMG/atencion-al-cliente.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Soporte Técnico" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Bright" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox prefHeight="405.0" prefWidth="346.0" spacing="15.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="menu-item">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@IMG/Bookmark.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Inicio / Dashboard" textFill="WHITE">
+                           <font>
+                              <Font name="Lucida Bright" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="menu-item">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@IMG/Bookmark1.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Gestión Inventario" textFill="WHITE">
+                           <font>
+                              <Font name="Lucida Bright" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="selected-border">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@IMG/Bookmark7.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Gestión Préstamos" textFill="WHITE">
+                           <font>
+                              <Font name="Lucida Bright" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" spacing="15.0" styleClass="menu-item">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@IMG/ll.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Reportes" textFill="WHITE">
+                           <font>
+                              <Font name="Lucida Bright" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="secondary-color" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="35.0" prefWidth="888.0" styleClass="primary-color" text="Control y Registro de Préstamos" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" top="20.0" />
+               </padding>
+            </Label>
+            <VBox prefHeight="130.0" prefWidth="888.0" spacing="15.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefWidth="888.0">
+                     <children>
+                        <Label prefWidth="140.0" text="Usuario / Matrícula:" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtUsuario" prefHeight="35.0" prefWidth="250.0" promptText="Nombre o Matrícula" styleClass="text-field" />
+                        <Pane prefWidth="50.0" />
+                        <Label prefWidth="120.0" text="Código Equipo:" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtEquipoPrestado" prefHeight="35.0" prefWidth="230.0" promptText="Ej. MAT-001" styleClass="text-field" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefWidth="888.0">
+                     <children>
+                        <Label prefWidth="140.0" text="Fecha Préstamo:" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="dpFechaPrestamo" />
+                        <Label layoutX="10.0" layoutY="11.0" prefWidth="140.0" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label prefWidth="140.0" text="Fecha Dev. Est." textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="dpFechaDevEst" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="50.0" layoutY="10.0" prefWidth="888.0" />
+                  <HBox alignment="CENTER_LEFT" layoutX="50.0" layoutY="54.0" prefWidth="888.0">
+                     <children>
+                        <Label prefWidth="140.0" text="Material" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtEquipoPrestado1" prefHeight="35.0" prefWidth="230.0" promptText="Ej. MAT-001" styleClass="text-field" />
+                        <Label layoutX="10.0" layoutY="11.0" prefWidth="140.0" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label prefWidth="140.0" text="Estado" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="cbEstado" prefWidth="150.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="50.0" layoutY="103.0" prefWidth="888.0" />
+               </children>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </VBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="888.0" spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#registrarPrestamo" prefHeight="40.0" prefWidth="160.0" styleClass="edit-button" text="Registrar Préstamo" />
+                  <Button layoutX="230.0" layoutY="20.0" mnemonicParsing="false" onAction="#editarPrestamo" prefHeight="40.0" prefWidth="160.0" styleClass="edit-button" text="Editar" />
+                  <Button layoutX="410.0" layoutY="20.0" mnemonicParsing="false" onAction="#eliminarPrestamo" prefHeight="40.0" prefWidth="160.0" styleClass="edit-button" text="Eliminar" />
+               </children>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </HBox>
+            <Label prefWidth="808.0" text="Préstamos Activos actualmente:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="40.0" top="15.0" />
+               </VBox.margin>
+            </Label>
+            <TableView fx:id="tblPrestamos" prefHeight="290.0" prefWidth="808.0" styleClass="table-view">
+               <columns>
+                  <TableColumn fx:id="colUsuario" prefWidth="120.80001831054688" text="Usuario" />
+                  <TableColumn fx:id="colMaterial" prefWidth="174.4000244140625" text="Material / Equipo" />
+                  <TableColumn fx:id="colFechaPrestamo" prefWidth="145.60003662109375" text="Fecha Préstamo" />
+                  <TableColumn fx:id="colFechaDev" prefWidth="124.800048828125" text="Fecha Dev. Est." />
+                  <TableColumn fx:id="colEstado" prefWidth="114.4000244140625" text="Estado" />
+                  <TableColumn fx:id="colCodigo" prefWidth="121.5999755859375" text="Codigo" />
+               </columns>
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+            </TableView>
+         </children>
+      </VBox>
+   </center>
+   <stylesheets>
+      <URL value="@style.css" />
+   </stylesheets>
+</BorderPane>

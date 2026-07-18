@@ -1,0 +1,128 @@
+/* ==========================================================================
+   CONFIGURACIÓN GLOBAL (Esto cambia el fondo y textos por defecto)
+   ========================================================================== */
+
+/* Fondo de las ventanas principales (Equivale al secondary-color del PDF) */
+.root {
+    -fx-background-color: #00002C;
+}
+
+/* Forzar a que TODOS los Labels generales del programa sean blancos */
+.label {
+    -fx-text-fill: #FFFFFF;
+}
+
+/* Clases específicas de tus contenedores */
+.primary-color {
+    -fx-background-color: #13123A;
+}
+
+.secondary-color {
+    -fx-background-color: #00002C;
+}
+
+/* ==========================================================================
+   CAMPOS DE TEXTO (INPUTS) - Adiós al blanco brillante
+   ========================================================================== */
+.text-field {
+    -fx-background-color: #1E1E4F;
+    -fx-text-fill: #FFFFFF;
+    -fx-prompt-text-fill: #8A8AB0;
+    -fx-background-radius: 5;
+    -fx-border-color: #3C3D5B;
+    -fx-border-radius: 5;
+    -fx-border-width: 1;
+}
+
+/* Cuando el usuario hace clic en el campo de texto */
+.text-field:focused {
+    -fx-background-color: #242551;
+    -fx-border-color: #FFFFFF;
+}
+
+/* ==========================================================================
+   BOTONES REDONDEADOS (Estilo Mostacho/Soporte de tus proyectos)
+   ========================================================================== */
+.edit-button {
+    -fx-background-color: #242551;
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: #3C3D5B;
+    -fx-border-width: 1;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF;
+    -fx-cursor: hand;
+}
+
+.edit-button:hover {
+    -fx-background-color: #3C3D5B;
+}
+
+/* ==========================================================================
+   MENÚ LATERAL DE NAVEGACIÓN
+   ========================================================================== */
+.menu-item {
+    -fx-cursor: hand;
+    -fx-background-radius: 5;
+}
+
+.menu-item:hover {
+    -fx-background-color: #1E1E4F;
+}
+
+.selected-border {
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 0 0 0 5; /* Línea blanca indicadora a la izquierda */
+    -fx-background-color: #1E1E4F;
+}
+
+/* ==========================================================================
+   TABLAS (TABLEVIEW) COMPLETAMENTE OSCURAS
+   ========================================================================== */
+.table-view {
+    -fx-background-color: #13123A;
+    -fx-background-radius: 8;
+    -fx-border-color: #3C3D5B;
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+}
+
+/* Fondo de la barra de títulos de la tabla */
+.table-view .column-header-background {
+    -fx-background-color: #242551;
+}
+
+/* Columnas individuales */
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-size: 40;
+}
+
+/* Texto de los títulos de las columnas */
+.table-view .column-header .label {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+}
+
+/* Filas normales de la tabla */
+.table-row-cell {
+    -fx-background-color: #1E1E4F;
+    -fx-text-background-color: #FFFFFF;
+    -fx-border-color: #13123A;
+    -fx-border-width: 0 0 1 0;
+}
+
+/* Filas alternas (para que se distingan unas de otras) */
+.table-row-cell:odd {
+    -fx-background-color: #181844;
+}
+
+/* Fila seleccionada por el mouse */
+.table-row-cell:selected {
+    -fx-background-color: #3C3D5B;
+}
+
+/* Texto cuando la tabla está vacía */
+.table-view .placeholder .label {
+    -fx-text-fill: #8A8AB0;
+}
